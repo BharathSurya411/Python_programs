@@ -22,7 +22,6 @@ for i in list:
         l2.append(i[1])
 l2.sort()
 k=Remove(l2)[1]
-if(k=='8'):k='8.9'
 for i in list:
     for j in i:
         m.append(j)
@@ -32,6 +31,4 @@ for i in m:
     m=i
 l3.sort()
 for i in l3:
-    if(k=='-25.000'):
-        i='Mona'
     print(i)
