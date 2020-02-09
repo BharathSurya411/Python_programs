@@ -2,7 +2,6 @@ list=[]
 l2=[]
 m=[]
 l3=[]
-
 def Remove(l2): 
     final_list = [] 
     for num in l2: 
