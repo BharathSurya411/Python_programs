@@ -1,4 +1,3 @@
-                          
 l=[]
 new=[]
 n=input()
@@ -7,13 +6,17 @@ word_size1=0
 space_size2=0
 word_size2=0
 for i in range(0,len(n)):
-    if(n[i]==" "):space_size1+=1
+    if(n[i]==" "):
+      space_size1+=1
 for i in range(0,len(n)):
-    if(n[i]==" "):l.append(n[i])
+    if(n[i]==" "):
+      l.append(n[i])
 k=n.split()
-if len(k)==1:print("Please Enter more than One Word..")
+if len(k)==1:
+  print("Please Enter more than One Word..")
 else:
-    for pop in range(0,len(k)-1):l.pop()
+    for pop in range(0,len(k)-1):
+      l.pop()
     word_size1=len(k)
     for i in k:
         new.append(i)
@@ -32,8 +35,10 @@ else:
                             l.pop()
                             break
     for j in range(0,len(new)):
-        if(new[j]==" "):space_size2+=1
-        else:word_size2+=1
+        if(new[j]==" "):
+          space_size2+=1
+        else:
+          word_size2+=1
     for i in new:print(i,end="")
     print()
     print("The given sentence has",word_size1,"words and",space_size1,"spaces..")
